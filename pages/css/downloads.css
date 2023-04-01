@@ -1,0 +1,946 @@
+@import url('/fonts/fonts.css');
+*{
+    font-family: 'Quicksand', sans-serif;
+    color: azure;
+    text-decoration: none;
+}
+body{
+background-color: darkslateblue;
+}
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+.avatar{
+    position: absolute;
+    top: 20%;
+    left: 4%;
+}
+.mobbar{
+    display: none;
+}
+.navbar{
+    position: relative;
+    background-color: #2b2929;
+    border-radius: 100px;
+    padding: 7px;
+}
+.brand-logo{
+    border-radius: 100px;    
+}
+.brand-text{
+    position: absolute;
+    font-size: large;
+    top: 35%;
+    left: 4.5%;
+}
+.downloads{
+    position: absolute; 
+    top: 39%;
+    left: 10.5%;
+    font-size:medium;
+    color: #be6ffb;
+}
+.devices{
+    position: absolute;
+    top: 39%;
+    left: 18.5%;
+    font-size: medium; 
+}
+.devices:hover{
+    color: #be6ffb;
+    transition: all 150ms;
+}
+.devices:not(hover){
+    color: azure;
+    transition: all 150ms;
+}
+.music{
+    position: absolute;
+    top: 39%;
+    left: 25.5%;
+    font-size: medium; 
+}
+.music:hover{
+    color: #be6ffb;
+    transition: all 150ms;
+}
+.music:not(hover){
+    color: azure;
+    transition: all 150ms;
+}
+.downloads-box{
+    content: "";
+    position: absolute;
+    height: 800px;
+    width: 1550px;
+    background-color: #2b2929;
+    /*border: 1px solid #7a7a7a50;*/
+    border-radius: 10px;
+    left: 5%;
+    top: 10%;
+    padding: 10px;
+    box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+    overflow: hidden;
+    z-index: 1;
+}
+.downloads-showcase{
+    content: "";
+    position: absolute;
+    height: 750px;
+    width: 1450px;
+    background-color: #454FBF;
+    /*border: 1px solid #7a7a7a50;*/
+    border-radius: 10px;   
+    padding: 10px;
+    box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+    overflow: hidden;
+    z-index: 2;
+}
+.osbake{
+    content: "";
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background-color: #23272A;
+    /*border: 1px solid #7a7a7a50;*/
+    border-radius: 10px;   
+    padding: 10px;
+    box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+    overflow: hidden;
+    z-index: 3;
+}
+.osbake-logo{
+    position: absolute;
+    left : 30%; 
+}
+.osbake-title{
+    position: absolute;
+    font-size: larger;
+    top: 35%;
+    left: 35%;
+}
+.osbake-description{
+    position: absolute;
+    font-size: medium;
+    top: 45%;
+    left: 10%;
+}
+.osbake-download-btn{
+position: absolute;
+font-size: larger;
+top: 75%;
+left: 30%;
+background-color: #5865F2;
+border-radius: 50px;
+text-align: center;
+border: #454FBF 1px solid;
+padding: 15px;
+text-decoration: none;
+}
+.addplayersmc{
+    left: 30%;
+    content: "";
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background-color: #23272A;
+    /*border: 1px solid #7a7a7a50;*/
+    border-radius: 10px;   
+    padding: 10px;
+    box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+    overflow: hidden;
+    z-index: 3;
+}
+.aps-logo{
+    position: absolute;
+    left : 30%;
+}
+.aps-title{
+    position: absolute;
+    font-size: larger;
+    top: 40%;
+    left: 35%;
+}
+.aps-description{
+    position: absolute;
+    font-size: medium;
+    top: 50%;
+    left: 20%;
+}
+.aps-download-btn{
+position: absolute;
+font-size: larger;
+top: 75%;
+left: 30%;
+background-color: #5865F2;
+border-radius: 50px;
+text-align: center;
+border: #454FBF 1px solid;
+padding: 15px;
+text-decoration: none;
+}
+.awnprank{
+    left: 60%;
+    content: "";
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background-color: #23272A;
+    /*border: 1px solid #7a7a7a50;*/
+    border-radius: 10px;   
+    padding: 10px;
+    box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+    overflow: hidden;
+    z-index: 3;
+}
+.awn-logo{
+    position: absolute;
+    left : 30%;
+}
+.awn-title{
+    position: absolute;
+    font-size: larger;
+    top: 40%;
+    left: 22%;
+}
+.awn-description{
+    position: absolute;
+    font-size: medium;
+    top: 50%;
+    left: 30%;
+}
+.awn-download-btn{
+position: absolute;
+font-size: larger;
+top: 75%;
+left: 30%;
+background-color: #5865F2;
+border-radius: 50px;
+text-align: center;
+border: #454FBF 1px solid;
+padding: 15px;
+text-decoration: none;
+}
+.webview2browser{
+    top: 50%;
+    content: "";
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background-color: #23272A;
+    /*border: 1px solid #7a7a7a50;*/
+    border-radius: 10px;   
+    padding: 10px;
+    box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+    overflow: hidden;
+    z-index: 3;
+}
+.w2b-logo{
+    position: absolute;
+    left : 30%;
+}
+.w2b-title{
+    position: absolute;
+    font-size: larger;
+    top: 40%;
+    left: 22%;
+}
+.w2b-description{
+    position: absolute;
+    font-size: medium;
+    top: 50%;
+    left: 5%;
+}
+.w2b-download-btn{
+position: absolute;
+font-size: larger;
+top: 75%;
+left: 30%;
+background-color: #5865F2;
+border-radius: 50px;
+text-align: center;
+border: #454FBF 1px solid;
+padding: 15px;
+text-decoration: none;
+}
+@media only screen and (max-width:600px){
+    ::-webkit-scrollbar {
+        width: 20px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: #d6dee1;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #a8bbbf;
+      }
+    .avatar{
+        top: 5%;
+        transform: scale(0.87);
+    }
+    .downloads{
+        display: none;
+    }
+    .devices{
+        display: none;
+    }
+    .music{
+        display: none;
+    }
+    .brand-text{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .brand-logo{
+        display: none;
+    }
+    .mobbar{
+        transition: all 150ms;
+        display: inline;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #2b2929;
+        width: 100%;
+        height: 7%;
+        z-index: 33;
+    }
+    .mobbar.open{
+        transition: all 150ms;
+        display: inline;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #2b2929;
+        width: 100%;
+        height: 100%;
+        z-index: 33;
+    }
+    .mobmenu{
+        position: absolute;
+        left: 40%;
+        color: azure;
+        text-align: center;
+        font-size: xx-large;
+        padding: 5px;
+        transition: all 150ms;
+        border-radius: 15px;
+    }
+    .moblink{
+        visibility: hidden;
+        display: none;
+        transition: all 150ms;
+    }
+    .moblink.show{
+        visibility: visible;
+        position: absolute;
+        transition: all 150ms;
+        color: azure;
+        display: inline;
+        z-index: 33;
+        top: 10%;
+        left: 40%;
+    }
+    .downnw{
+        visibility: hidden;
+        display: none;
+        transition: all 150ms;
+    }
+    .downnw.show{
+        visibility: visible;
+        position: absolute;
+        transition: all 150ms;
+        color: azure;
+        display: inline;
+        z-index: 33;
+        top: 15%;
+        left: 35%;
+    }
+    .devnw{
+        visibility: hidden;
+        display: none;
+        transition: all 150ms;
+    }
+    .devnw.show{
+        visibility: visible;
+        position: absolute;
+        transition: all 150ms;
+        color: azure;
+        display: inline;
+        z-index: 33;
+        top: 20%;
+        left: 38%;
+    }
+    .musicnw{
+        visibility: hidden;
+        display: none;
+        transition: all 150ms;
+    }
+    .musicnw.show{
+        visibility: visible;
+        position: absolute;
+        transition: all 150ms;
+        color: azure;
+        display: inline;
+        z-index: 33;
+        top: 25%;
+        left: 40%;
+    }
+    .downloads-box{
+        content: "";
+        position: absolute;
+        height: 1800px;
+        width: 350px;
+        background-color: #2b2929;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;
+        left: -8%;
+        top: -10%;
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .downloads-showcase{
+        content: "";
+        position: absolute;
+        left: -10%;
+        height: 1800px;
+        width: 350px;
+        background-color: #454FBF;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;   
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 2;
+    }
+    .osbake{
+        top: 5%;
+        left: -10%;
+        content: "";
+        position: absolute;
+        height: 350px;
+        width: 350px;
+        background-color: #23272A;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;   
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .osbake-logo{
+        position: absolute;
+        left : 30%; 
+    }
+    .osbake-title{
+        position: absolute;
+        font-size: larger;
+        top: 35%;
+        left: 35%;
+    }
+    .osbake-description{
+        position: absolute;
+        font-size: medium;
+        top: 45%;
+        left: 10%;
+    }
+    .osbake-download-btn{
+    position: absolute;
+    font-size: larger;
+    top: 75%;
+    left: 30%;
+    background-color: #5865F2;
+    border-radius: 50px;
+    text-align: center;
+    border: #454FBF 1px solid;
+    padding: 15px;
+    text-decoration: none;
+    }
+    .addplayersmc{
+        left: -10%;
+        top: 30%;
+        content: "";
+        position: absolute;
+        height: 350px;
+        width: 350px;
+        background-color: #23272A;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;   
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .aps-logo{
+        position: absolute;
+        left : 30%;
+    }
+    .aps-title{
+        position: absolute;
+        font-size: larger;
+        top: 40%;
+        left: 35%;
+    }
+    .aps-description{
+        position: absolute;
+        font-size: medium;
+        top: 50%;
+        left: 20%;
+    }
+    .aps-download-btn{
+    position: absolute;
+    font-size: larger;
+    top: 75%;
+    left: 30%;
+    background-color: #5865F2;
+    border-radius: 50px;
+    text-align: center;
+    border: #454FBF 1px solid;
+    padding: 15px;
+    text-decoration: none;
+    }
+    .awnprank{
+        content: "";
+        left: -10%;
+        top: 53%;
+        position: absolute;
+        height: 350px;
+        width: 350px;
+        background-color: #23272A;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;   
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .awn-logo{
+        position: absolute;
+        left : 30%;
+    }
+    .awn-title{
+        position: absolute;
+        font-size: larger;
+        top: 40%;
+        left: 22%;
+    }
+    .awn-description{
+        position: absolute;
+        font-size: medium;
+        top: 50%;
+        left: 30%;
+    }
+    .awn-download-btn{
+    position: absolute;
+    font-size: larger;
+    background-color: #5865F2;
+    border-radius: 50px;
+    text-align: center;
+    border: #454FBF 1px solid;
+    padding: 15px;
+    text-decoration: none;
+    }
+    .webview2browser{
+        left: -10%;
+        top: 75%;
+        content: "";
+        position: absolute;
+        height: 350px;
+        width: 350px;
+        background-color: #23272A;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;   
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .w2b-logo{
+        position: absolute;
+        left : 30%;
+    }
+    .w2b-title{
+        position: absolute;
+        font-size: larger;
+        top: 40%;
+        left: 22%;
+    }
+    .w2b-description{
+        position: absolute;
+        font-size: medium;
+        top: 50%;
+        left: 5%;
+    }
+    .w2b-download-btn{
+    position: absolute;
+    font-size: larger;
+    top: 75%;
+    left: 30%;
+    background-color: #5865F2;
+    border-radius: 50px;
+    text-align: center;
+    border: #454FBF 1px solid;
+    padding: 15px;
+    text-decoration: none;
+    }
+}
+@media only screen and (min-width:701px) and (max-width:1200px) and (max-height:1200px) and (min-height:750px){
+    ::-webkit-scrollbar {
+        width: 20px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: #d6dee1;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #a8bbbf;
+      }
+    .avatar{
+        top: 5%;
+        transform: scale(0.87);
+    }
+    .downloads{
+        display: none;
+    }
+    .devices{
+        display: none;
+    }
+    .music{
+        display: none;
+    }
+    .brand-text{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .brand-logo{
+        display: none;
+    }
+    .mobbar{
+        transition: all 150ms;
+        display: inline;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #2b2929;
+        width: 100%;
+        height: 5%;
+        z-index: 33;
+    }
+    .mobbar.open{
+        transition: all 150ms;
+        display: inline;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #2b2929;
+        width: 100%;
+        height: 100%;
+        z-index: 33;
+    }
+    .mobmenu{
+        position: absolute;
+        left: 40%;
+        color: azure;
+        text-align: center;
+        font-size: xx-large;
+        padding: 5px;
+        transition: all 150ms;
+        border-radius: 15px;
+    }
+    .moblink{
+        visibility: hidden;
+        display: none;
+        transition: all 150ms;
+    }
+    .moblink.show{
+        visibility: visible;
+        position: absolute;
+        transition: all 150ms;
+        color: azure;
+        display: inline;
+        z-index: 33;
+        top: 10%;
+        left: 40%;
+    }
+    .downnw{
+        visibility: hidden;
+        display: none;
+        transition: all 150ms;
+    }
+    .downnw.show{
+        visibility: visible;
+        position: absolute;
+        transition: all 150ms;
+        color: azure;
+        display: inline;
+        z-index: 33;
+        top: 20%;
+        left: 38%;
+    }
+    .devnw{
+        visibility: hidden;
+        display: none;
+        transition: all 150ms;
+    }
+    .devnw.show{
+        visibility: visible;
+        position: absolute;
+        transition: all 150ms;
+        color: azure;
+        display: inline;
+        z-index: 33;
+        top: 30%;
+        left: 39.5%;
+    }
+    .musicnw{
+        visibility: hidden;
+        display: none;
+        transition: all 150ms;
+    }
+    .musicnw.show{
+        visibility: visible;
+        position: absolute;
+        transition: all 150ms;
+        color: azure;
+        display: inline;
+        z-index: 33;
+        top: 40%;
+        left: 40.5%;
+    }
+    .downloads-box{
+        content: "";
+        position: absolute;
+        height: 1800px;
+        width: 650px;
+        background-color: #2b2929;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;
+        left: 10%;
+        top: 10%;
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .downloads-showcase{
+        content: "";
+        position: absolute;
+        left: -2%;
+        height: 1800px;
+        width: 600px;
+        background-color: #454FBF;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;   
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 2;
+    }
+    .osbake{
+        top: 5%;
+        left: 10%;
+        content: "";
+        position: absolute;
+        height: 350px;
+        width: 350px;
+        background-color: #23272A;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;   
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .osbake-logo{
+        position: absolute;
+        left : 30%; 
+    }
+    .osbake-title{
+        position: absolute;
+        font-size: larger;
+        top: 35%;
+        left: 35%;
+    }
+    .osbake-description{
+        position: absolute;
+        font-size: medium;
+        top: 45%;
+        left: 10%;
+    }
+    .osbake-download-btn{
+    position: absolute;
+    font-size: larger;
+    top: 75%;
+    left: 30%;
+    background-color: #5865F2;
+    border-radius: 50px;
+    text-align: center;
+    border: #454FBF 1px solid;
+    padding: 15px;
+    text-decoration: none;
+    }
+    .addplayersmc{
+        left: 10%;
+        top: 30%;
+        content: "";
+        position: absolute;
+        height: 350px;
+        width: 350px;
+        background-color: #23272A;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;   
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .aps-logo{
+        position: absolute;
+        left : 30%;
+    }
+    .aps-title{
+        position: absolute;
+        font-size: larger;
+        top: 40%;
+        left: 35%;
+    }
+    .aps-description{
+        position: absolute;
+        font-size: medium;
+        top: 50%;
+        left: 20%;
+    }
+    .aps-download-btn{
+    position: absolute;
+    font-size: larger;
+    top: 75%;
+    left: 30%;
+    background-color: #5865F2;
+    border-radius: 50px;
+    text-align: center;
+    border: #454FBF 1px solid;
+    padding: 15px;
+    text-decoration: none;
+    }
+    .awnprank{
+        content: "";
+        left: 10%;
+        top: 53%;
+        position: absolute;
+        height: 350px;
+        width: 350px;
+        background-color: #23272A;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;   
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .awn-logo{
+        position: absolute;
+        left : 30%;
+    }
+    .awn-title{
+        position: absolute;
+        font-size: larger;
+        top: 40%;
+        left: 22%;
+    }
+    .awn-description{
+        position: absolute;
+        font-size: medium;
+        top: 50%;
+        left: 30%;
+    }
+    .awn-download-btn{
+    position: absolute;
+    font-size: larger;
+    background-color: #5865F2;
+    border-radius: 50px;
+    text-align: center;
+    border: #454FBF 1px solid;
+    padding: 15px;
+    text-decoration: none;
+    }
+    .webview2browser{
+        left: 10%;
+        top: 75%;
+        content: "";
+        position: absolute;
+        height: 350px;
+        width: 350px;
+        background-color: #23272A;
+        /*border: 1px solid #7a7a7a50;*/
+        border-radius: 10px;   
+        padding: 10px;
+        box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .w2b-logo{
+        position: absolute;
+        left : 30%;
+    }
+    .w2b-title{
+        position: absolute;
+        font-size: larger;
+        top: 40%;
+        left: 22%;
+    }
+    .w2b-description{
+        position: absolute;
+        font-size: medium;
+        top: 50%;
+        left: 5%;
+    }
+    .w2b-download-btn{
+    position: absolute;
+    font-size: larger;
+    top: 75%;
+    left: 30%;
+    background-color: #5865F2;
+    border-radius: 50px;
+    text-align: center;
+    border: #454FBF 1px solid;
+    padding: 15px;
+    text-decoration: none;
+    }
+}

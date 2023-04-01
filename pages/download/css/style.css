@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+    color: azure;
+    text-decoration: none;
+}
+body{
+background-color: darkslateblue;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+  .main-text{
+    position: absolute;
+    font-size: xx-large;
+    top: 40%;
+  }
+  .download-utext{
+    position: absolute;
+    font-size: large;
+    top: 45%;
+  }
+  .btn-restart{
+    position: absolute;
+    font-size: larger;
+    top: 45%;
+    left: 35%;
+    color: #00a2ff;
+    text-decoration: dashed;
+  }
+  .download-frame{
+    visibility: hidden;
+  }
+  @media only screen and (max-width:600px){
+    .main-text{
+      position: absolute;
+      font-size: xx-large;
+      top: 30%;
+      left:2%;
+    }
+    .download-utext{
+      position: absolute;
+      font-size: large;
+      top: 45%;
+      left: 2%;
+    }
+    .btn-restart{
+      position: absolute;
+      font-size: larger;
+      top: 50%;
+      left: 2%;
+      color: #00a2ff;
+      text-decoration: dashed;
+    }
+  }
+  @media only screen and (min-width:701px) and (max-width:1200px) and (max-height:1200px) and (min-height:750px){
+    .main-text{
+      position: absolute;
+      font-size: xx-large;
+      top: 40%;
+      left:2%;
+    }
+    .download-utext{
+      position: absolute;
+      font-size: large;
+      top: 45%;
+      left: 2%;
+    }
+    .btn-restart{
+      position: absolute;
+      font-size: larger;
+      top: 50%;
+      left: 2%;
+      color: #00a2ff;
+      text-decoration: dashed;
+    }  
+  }
+    @media only screen and (max-height:700px) and (min-width:700px) and (max-width:1300px){
+      .main-text{
+        position: absolute;
+        font-size: xx-large;
+        top: 35%;
+        left:1%;
+      }
+      .download-utext{
+        position: absolute;
+        font-size: large;
+        top: 50%;
+        left: 2%;
+      }
+      .btn-restart{
+        position: absolute;
+        font-size: larger;
+        top: 60%;
+        left: 2%;
+        color: #00a2ff;
+        text-decoration: dashed;
+    }
+  }
