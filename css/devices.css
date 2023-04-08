@@ -1,0 +1,202 @@
+.cherry{
+    content: "";
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    background-color: #2b2929;
+    /*border: 1px solid #7a7a7a50;*/
+    border-radius: 10px;
+    left: 10%;
+    top: 122px;
+    padding: 10px;
+    box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+    overflow: hidden;
+    z-index: 1;
+}
+.realname{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    font-size: larger;
+}
+.codename{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    font-size: large;
+}
+.OS{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    font-size: medium;
+}
+.specs{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    font-size: medium;
+}
+.specs-link{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    font-size: medium;
+}
+.link{
+    position: inherit;
+    color: dodgerblue;
+}
+.pc-laptop{
+    position: absolute;
+    top:1%;
+    left: 23%;
+}
+.phone{
+    position: absolute;
+    top:10%;
+    left: 15%;
+}
+.kirita{
+    content: "";
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    background-color: #2b2929;
+    /*border: 1px solid #7a7a7a50;*/
+    border-radius: 10px;
+    left: 50%;
+    top: 122px;
+    padding: 10px;
+    box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+    overflow: hidden;
+    z-index: 1;
+}
+.realname-phone{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    font-size: larger;
+}
+.codename-phone{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    font-size: large;
+}
+.OS-phone{
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    font-size: medium;
+}
+.specs-phone{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    font-size: medium;
+}
+.phoenix{
+    content: "";
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    background-color: #2b2929;
+    /*border: 1px solid #7a7a7a50;*/
+    border-radius: 10px;
+    left: 10%;
+    top: 650px;
+    padding: 10px;
+    box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+    overflow: hidden;
+    z-index: 1;
+}
+.tablet{
+    position: absolute;
+    left: 30%;
+}
+.realname-tablet{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    font-size: larger;
+}
+.codename-tablet{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    font-size: large;
+}
+.OS-tablet{
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: fit-content;
+    font-size: medium;
+}
+.specs-tablet{
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    font-size: medium;
+}
+.specslink-tablet{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-left: 20px;
+    width: fit-content;
+    font-size: medium;
+}
+.coso{
+    content: "";
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    background-color: #2b2929;
+    /*border: 1px solid #7a7a7a50;*/
+    border-radius: 10px;
+    left: 50%;
+    top: 650px;
+    padding: 10px;
+    box-shadow: 10px 5px 15px #00000015, 10px 8px 12px #00000015;
+    overflow: hidden;
+    z-index: 1;
+}
+.realname-coso{
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    font-size: larger;
+}
+.coso-img{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+.codename-coso{
+    position: absolute;
+    top: 45%;
+    left: 29.5%;
+    font-size: larger;
+}
+.OS-coso{
+    position: absolute;
+    top: 55%;
+    left: 24%;
+    font-size: larger;
+}
+.specs-coso{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    font-size: medium;
+}
+.specslink-coso{
+    position: absolute;
+    top: 65%;
+    left: 46%;
+    margin-left: 20px;
+    width: fit-content;
+    font-size: medium;
+}

@@ -10,6 +10,9 @@ let musicdsk = document.querySelector(".music")
 let homedsk = document.querySelector(".home")
 let homepage = document.querySelector(".homepage")
 let devpage = document.querySelector(".devicespage")
+let ytbtn = document.querySelector(".youtube-btn")
+let ytchn = document.querySelector(".yt-channel-page-embed")
+let ytclosebtn = document.querySelector(".closebtn-yt")
 toggler.addEventListener("click", function () {
   bar.classList.toggle("open");
   moblink.classList.toggle("show")
@@ -27,4 +30,10 @@ downloadsdsk.addEventListener("click",function () {
 devdsk.addEventListener("click",function () {
   homepage.classList.add("hide")
   devpage.classList.add("show")
+})
+ytbtn.addEventListener("click",function () {
+  ytchn.classList.add("popopen")
+})
+ytclosebtn.addEventListener("click",function () {
+  ytchn.classList.remove("popopen")
 })

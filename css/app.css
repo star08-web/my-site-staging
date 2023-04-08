@@ -1,0 +1,120 @@
+@import url('/fonts/fonts.css');
+*{
+    font-family: 'space-mono', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+body{
+background-color: black;
+}
+.bg{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -20;
+    background: linear-gradient(270deg, #004bad, #cb6be6);
+    background-size: 400% 400%;
+    -webkit-animation: movebg 42s ease infinite;
+    -moz-animation: movebg 42s ease infinite;
+    -o-animation: movebg 42s ease infinite;
+    animation: movebg 42s ease infinite;
+}
+
+@-webkit-keyframes movebg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes movebg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes movebg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes movebg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+  html{
+    scroll-behavior: smooth;
+}
+.home{
+    cursor: pointer;
+}
+.homepage{
+    transition: all 150ms;
+}
+.homepage.hide{
+    display: none;
+}
+.devicespage{
+    transition: all 150ms;
+    display: none;
+}
+.devicespage.show{
+    display: inline;
+}
+.navbar{
+  position: fixed;
+  left: -2%;
+  top: 6%;
+  background-color: #1f1d1d;
+  border-radius: 100px;
+  width: 5%;
+  height: 67%;
+}
+.brand-logo{
+  position: relative;
+  border-radius: 100px;    
+  top: 5%;
+  left: 24%;
+}
+.downloads{
+  position: absolute; 
+  top: 15%;
+  left: 34%;
+  font-size: xx-large;
+  cursor: pointer;
+}
+.devices{
+  position: absolute;
+  top: 25%;
+  left: 34%;
+  font-size: xx-large;
+  cursor: pointer; 
+}
+.music{
+  position: absolute;
+  top: 35%;
+  left: 34%;
+  font-size: xx-large;
+  cursor: pointer; 
+}
+.mobbar{
+  display: none;
+}
