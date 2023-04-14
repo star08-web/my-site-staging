@@ -16,13 +16,17 @@
     left: 33%;
 }
 .btn-img-quick{
-    background-color: white;
-    border-radius: 100px;
-    transform: scale(2.3);
+    border: 3px solid #fff;
+    border-radius: 7.5px;
+    padding: 10px;
+    height: 2cm;
+    width: 2cm;
+    backdrop-filter: blur(10px);
     transition: all 150ms;
+    z-index: 1;
 }
 .btn-img-quick:hover{
-    transform: scale(2.5);
+    transform: scale(1.5);
     cursor: pointer;
 }
 .contact-btn{
@@ -30,15 +34,26 @@
     top: 52%;
     left: 33%;
 }
+.contact-btn:hover{
+    z-index: 2;
+}
 .youtube-btn{
     position: absolute;
+    margin-left: 35px;
     top: 52%;
     left: 38%;
+}
+.youtube-btn:hover{
+    z-index: 2;
 }
 .bio-btn{
     position: absolute;
     top: 52%;
+    margin-left: 70px;
     left: 43%;
+}
+.bio-btn:hover{
+    z-index: 2;
 }
 .yt-channel-page-embed{
     position: absolute;
