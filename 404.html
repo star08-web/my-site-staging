@@ -4,117 +4,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Houston, we have a problem</title>
+    <title>Page Error</title>
     <link rel="stylesheet" href="/fonts/fonts.css">
     <style>
         *{
-            color: rgb(255, 83, 83);
-            font-family: 'firacode';
+            color: white;
+            font-family: 'firacode' ,sans-serif;
+        }
+        .kpanic{
+            color: white;
+            font-family: 'kernel',sans-serif;
+            font-weight: 100;
+            display: none;
+        }
+        .kpanic.show{
+            display: inline;
+        }
+        .debug_block{
+            color: rgb(255, 38, 0);
+            font-family: 'firacode' ,sans-serif;
+        }
+        .ea{
+            background-color: black;
+            cursor: pointer;
+            position: absolute;
+            top: 85%;
+            left: 85%;
+            width: 10%;
+            height: 15%;
         }
         body{
             background-color: black;
             margin: 0px;
             padding: 0px;
         }
-        .error-text{
-            position: absolute;
+        .err404{
             font-size: xx-large;
-            top: 3%;
-            left: 2%;
         }
-        .error-description{
-            position: absolute;
-            font-size: x-large;
-            top: 9%;
-            left: 2%;  
+        .err404.hide{
+            display: none;
         }
-        @media only screen and (max-width:600px){
-            .error-img{
-            transform: scale(0.5);
-            top: -10%;
-            left: -10%;
-            }
-            .error-text{
-                font-size: x-large;
-                top: 45%;
-                text-align: justify;
-            }
-            .error-description{
-                top: 50%;
-                font-size: larger;
-                text-align: justify;
-                width: fit-content;
-                height: fit-content;
-            }
-            .error-code{
-                left: 30%;
-                top: 60%;
-                font-size: larger;
-                text-align: justify;
-                width: fit-content;
-                height: fit-content; 
-            }
-        }
-        @media only screen and (min-width:701px) and (max-width:1200px) and (max-height:1200px) and (min-height:750px){
-            .error-img{
-            transform: scale(0.7);
-            top: -7%;
-            left: 13%;
-            }
-            .error-text{
-                font-size: xx-large;
-                top: 35%;
-                left: 15%;
-                text-align: justify;
-            }
-            .error-description{
-                top: 40%;
-                font-size: x-large;
-                text-align: justify;
-                width: fit-content;
-                height: fit-content;
-            }
-            .error-code{
-                left: 30%;
-                top: 50%;
-                font-size: x-large;
-                text-align: justify;
-                width: fit-content;
-                height: fit-content; 
-            }
-    }
-    @media only screen and (max-height:600px) and (min-width:600px) and (max-width:1300px){
-            .error-img{
-            transform: scale(0.30);
-            top: -40%;
-            left: 13%;
-            }
-            .error-text{
-                font-size: xx-large;
-                top: 40%;
-                left: 15%;
-                text-align: justify;
-            }
-            .error-description{
-                top: 60%;
-                font-size: x-large;
-                text-align: justify;
-                width: fit-content;
-                height: fit-content;
-            }
-            .error-code{
-                left: 35%;
-                top: 80%;
-                font-size: x-large;
-                text-align: justify;
-                width: fit-content;
-                height: fit-content; 
-            }
-    }
     </style>
 </head>
 <body>
-    <a class="error-text">Error</a>
-    <a class="error-description">Requested Resource not found</a>
+    <div class="kpanic">
+        <a>
+            web-pci.c:v033.9232.2013 21/03/2021 Star08-web
+       </a>
+       <br>
+       <a>
+           https://www.star08-web.pages.dev/slt0/webpcii1.html
+       </a>
+       <br>
+       <a>
+           hda0: STAR08-WEB VIRTUAL HARDDISK, ATA DISK drive
+       </a>
+       <br>
+       <a>
+           ide0 at 0x1f0 - 0x1f7, 0x3f6 on irq 14
+       </a>
+       <br>
+       <a>
+           hdc: STAR08-WEB VIRTUAL CD-ROM, ATAPI CD/DVD-ROM drive
+       </a>
+       <br>
+       <a>
+           ide1 at 0x444 - 0x910, 0x211 on irq 15
+       </a>
+       <br>
+       <a>
+           fd0: STAR08-WEB VIRTUAL FLOPPY, ATA FLOPPY drive
+       </a>
+       <br>
+       <a>
+           ide2 at 0x7363-0x6e6565, 0x4569 on irq 16
+       </a>
+       <br>
+       <a>
+           ACPI: PCI Interrupt Link [[LNKC] ebabked at IRQ 10
+       </a>
+       <br>
+       <a>
+           ACPI: PCI Interrupt 0000:00:03:.0[[A] -> Link [[LNKC] -> GSI 10 (level, low) -> IRQ 10
+       </a>
+       <br>
+       <a>
+           eno1: Star08-Web Project0 found at 0xc453, IRQ 10, 09:10:21:86:75:30
+       </a>
+       <br>
+       <a>
+           hda: max request size: 512KiB
+       </a>
+       <br>
+       <a>
+           hda: 2147483648 sectors (1 TB) w/256KiB Cache, CHS=178/255/63, (U)DMA
+       </a>
+       <br>
+       <a>
+           hda: hda1
+       </a>
+       <br>
+       <a>
+           hdc: ATAPI 4x CD-ROM drive, 512kB Cache, (U)DMA
+       </a>
+       <br>
+       <a>
+           Uniform CD-ROM driver Revision: 3.20
+       </a>
+       <br>
+       <a>
+           Done.
+       </a>
+       <br>
+       <a>
+           Begin: pageloader.so
+       </a>
+       <br>
+       <a>
+           Done.
+       </a>
+       <br>
+       <a>
+           pageloader.so[[3352]: Importing _pgreadnka: ImportError('No module named _pgreadnka',)
+       </a>
+       <br>
+       <a>
+           pageloader.so[[3352]: nvdrs: Loaded, about to disable thread optimizations.
+       </a>
+       <br>
+       <a>
+           pageloader.so[[3352]: nvdrs: Disabled thread optimizations.
+       </a>
+       <br>
+       <a>
+           pageloader.so: SUCCESS.
+       </a>
+       <br>
+       <a>
+           Done.
+       </a>
+       <br>
+       <a>
+           Begin: pageloader.so -> linux-4.12.14
+       </a>
+       <br>
+       <a>
+           /init: /init: 151: smoklioinb.a : 0xforce=panic
+       </a>
+       <br>
+       <a>Kernel panic - not syncing: Attempted to kill init!</a>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <div class="debug_block">
+        <a>VM Crash, no infrastructure damage detected.</a>
+        <br>
+        <a>Monitor Kernel Access evasion risk: Unknown</a>
+        <br>
+        <a>this incident will be reported</a>
+        <br>
+        <a>---------- Error 404 ----------</a> 
+       </div>
+    </div>
+    <div class="err404">
+        <h1>:(</h1>
+        <a>Resource Error: NotFound</a>
+        <br>
+        <a>Error 404</a>
+    </div>
+    <div class="ea"></div>
+    <script>
+        let easteregg = document.querySelector(".kpanic");
+        let toggler = document.querySelector(".ea");
+        let normal = document.querySelector(".err404");
+        toggler.addEventListener("click", function () {
+        easteregg.classList.toggle("show");
+        normal.classList.toggle("hide");
+});
+    </script>
 </body>
 </html>
