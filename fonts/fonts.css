@@ -9,26 +9,6 @@
     src: url(./Inter.ttf);
 }
 @font-face {
-    font-family: ibmplexsans-bold;
-    src: url(./IBMPlexSans-Bold.ttf);
-}
-@font-face {
-    font-family: ibmplexsans-bi;
-    src: url(./IBMPlexSans-BoldItalic.ttf);
-}
-@font-face {
-    font-family: ibmplexsans;
-    src: url(./IBMPlexSans-Regular.ttf);
-}
-@font-face {
-    font-family: space-mono-bi;
-    src: url(./IBMPlexSans-BoldItalic.ttf);
-}
-@font-face {
-    font-family:ibmlight;
-    src: url(./IBMPlexSans-Light.ttf);
-}
-@font-face {
     font-family: firacode;
     src: url(./FiraCode-VariableFont_wght.ttf);
 }
@@ -36,7 +16,9 @@
     font-family: rubik;
     src: url(./Rubik-VariableFont_wght.ttf);
 }
+/** font license is creative commons attribution share alike **/
+/** http://int10h.org/oldschool-pc-fonts **/
 @font-face {
     font-family: kernel;
-    src: url(./F25_Bank_Printer.ttf);
+    src: url(./Web437_IBM_VGA_8x14.woff);
 }

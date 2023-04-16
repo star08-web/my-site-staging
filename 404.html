@@ -12,17 +12,19 @@
             font-family: 'firacode' ,sans-serif;
         }
         .kpanic{
-            color: white;
-            font-family: 'kernel',sans-serif;
-            font-weight: 100;
             display: none;
         }
         .kpanic.show{
             display: inline;
         }
-        .debug_block{
+        .kpanic-text{
+            color: white;
+            font-family: 'kernel',sans-serif;
+            font-weight: 200;
+        }
+        .dbg_rd{
+            font-family: 'kernel' ,sans-serif;
             color: rgb(255, 38, 0);
-            font-family: 'firacode' ,sans-serif;
         }
         .ea{
             background-color: black;
@@ -48,111 +50,111 @@
 </head>
 <body>
     <div class="kpanic">
-        <a>
+        <a class="kpanic-text">
             web-pci.c:v033.9232.2013 21/03/2021 Star08-web
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            https://www.star08-web.pages.dev/slt0/webpcii1.html
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            hda0: STAR08-WEB VIRTUAL HARDDISK, ATA DISK drive
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            ide0 at 0x1f0 - 0x1f7, 0x3f6 on irq 14
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            hdc: STAR08-WEB VIRTUAL CD-ROM, ATAPI CD/DVD-ROM drive
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            ide1 at 0x444 - 0x910, 0x211 on irq 15
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            fd0: STAR08-WEB VIRTUAL FLOPPY, ATA FLOPPY drive
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            ide2 at 0x7363-0x6e6565, 0x4569 on irq 16
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            ACPI: PCI Interrupt Link [[LNKC] ebabked at IRQ 10
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            ACPI: PCI Interrupt 0000:00:03:.0[[A] -> Link [[LNKC] -> GSI 10 (level, low) -> IRQ 10
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            eno1: Star08-Web Project0 found at 0xc453, IRQ 10, 09:10:21:86:75:30
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            hda: max request size: 512KiB
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            hda: 2147483648 sectors (1 TB) w/256KiB Cache, CHS=178/255/63, (U)DMA
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            hda: hda1
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            hdc: ATAPI 4x CD-ROM drive, 512kB Cache, (U)DMA
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            Uniform CD-ROM driver Revision: 3.20
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            Done.
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            Begin: pageloader.so
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            Done.
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            pageloader.so[[3352]: Importing _pgreadnka: ImportError('No module named _pgreadnka',)
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            pageloader.so[[3352]: nvdrs: Loaded, about to disable thread optimizations.
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            pageloader.so[[3352]: nvdrs: Disabled thread optimizations.
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            pageloader.so: SUCCESS.
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            Done.
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            Begin: pageloader.so -> linux-4.12.14
        </a>
        <br>
-       <a>
+       <a class="kpanic-text">
            /init: /init: 151: smoklioinb.a : 0xforce=panic
        </a>
        <br>
-       <a>Kernel panic - not syncing: Attempted to kill init!</a>
+       <a class="kpanic-text">Kernel panic - not syncing: Attempted to kill init!</a>
        <br>
        <br>
        <br>
@@ -166,13 +168,13 @@
        <br>
        <br>
        <div class="debug_block">
-        <a>VM Crash, no infrastructure damage detected.</a>
+        <a class="dbg_rd">VM Crash, no infrastructure damage detected.</a>
         <br>
-        <a>Monitor Kernel Access evasion risk: Unknown</a>
+        <a class="dbg_rd">Monitor Kernel Access evasion risk: Unknown</a>
         <br>
-        <a>this incident will be reported</a>
+        <a class="dbg_rd">this incident will be reported</a>
         <br>
-        <a>---------- Error 404 ----------</a> 
+        <a class="dbg_rd">---------- Error 404 ----------</a> 
        </div>
     </div>
     <div class="err404">
