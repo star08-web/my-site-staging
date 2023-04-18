@@ -104,7 +104,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -21;
+    z-index: -22;
     background-color: rgba(0, 0, 0, 0.534);
     transition: all 150ms;
 }
@@ -139,6 +139,49 @@
     background-color: rgb(204, 199, 199);
 }
 .closebtn-cnt:not(hover){
+    background-color: rgb(163, 159, 159);
+}
+.biolink{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -23;
+    background-color: rgba(0, 0, 0, 0.534);
+    transition: all 150ms;
+}
+.biolink.popopen{
+    transition: all 150ms;
+    z-index: 4;
+}
+.biolink-iframe{
+    position: absolute;
+    top: 5%;
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+    left: 8%;
+}
+.closebtn-bio{
+    position: absolute;
+    background-color: rgb(163, 159, 159);
+    color: black;
+    font-family: 'firacode';
+    font-size: larger;
+    border-radius: 5px;
+    padding: 5px;
+    width: 5%;
+    text-align: center;
+    top: 88%;
+    left: 45%;
+    transition: all 150ms;
+    cursor: pointer;
+}
+.closebtn-bio:hover{
+    background-color: rgb(204, 199, 199);
+}
+.closebtn-bio:not(hover){
     background-color: rgb(163, 159, 159);
 }
 /* Portrait phone */

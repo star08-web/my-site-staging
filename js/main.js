@@ -16,6 +16,9 @@ let ytclosebtn = document.querySelector(".closebtn-yt");
 let cntclosebtn = document.querySelector(".closebtn-cnt");
 let contactbtn = document.querySelector(".contact-btn");
 let contact = document.querySelector(".contact-form");
+let biobtn = document.querySelector(".bio-btn");
+let bio = document.querySelector(".biolink");
+let bioclose = document.querySelector(".closebtn-bio");
 
 toggler.addEventListener("click", function () {
   bar.classList.toggle("open");
@@ -54,4 +57,11 @@ contactbtn.addEventListener("click",function () {
 
 cntclosebtn.addEventListener("click",function () {
   contact.classList.remove("popopen");
+});
+biobtn.addEventListener("click",function () {
+  bio.classList.add("popopen");
+});
+
+bioclose.addEventListener("click",function () {
+  bio.classList.remove("popopen");
 });
