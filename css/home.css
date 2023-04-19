@@ -27,7 +27,9 @@
 }
 .btn-img-quick:hover{
     transform: scale(1.5);
+    background-color: azure;
     cursor: pointer;
+    border: none;
 }
 .contact-btn{
     position: absolute;

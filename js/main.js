@@ -19,7 +19,9 @@ let contact = document.querySelector(".contact-form");
 let biobtn = document.querySelector(".bio-btn");
 let bio = document.querySelector(".biolink");
 let bioclose = document.querySelector(".closebtn-bio");
-
+let musicpg = document.querySelector(".musicpg")
+let musicbtn = document.querySelector(".music")
+let downloadpg = document.querySelector(".download")
 toggler.addEventListener("click", function () {
   bar.classList.toggle("open");
   moblink.classList.toggle("show");
@@ -31,16 +33,22 @@ toggler.addEventListener("click", function () {
 homedsk.addEventListener("click",function () {
   homepage.classList.remove("hide");
   devpage.classList.remove("show");
+  musicpg.classList.remove("show");
+  downloadpg.classList.remove("show");
 });
 
 downloadsdsk.addEventListener("click",function () {
   homepage.classList.add("hide");
   devpage.classList.remove("show");
+  musicpg.classList.remove("show");
+  downloadpg.classList.add("show");
 });
 
 devdsk.addEventListener("click",function () {
   homepage.classList.add("hide");
   devpage.classList.add("show");
+  musicpg.classList.remove("show");
+  downloadpg.classList.remove("show");
 });
 
 ytbtn.addEventListener("click",function () {
@@ -64,4 +72,10 @@ biobtn.addEventListener("click",function () {
 
 bioclose.addEventListener("click",function () {
   bio.classList.remove("popopen");
+});
+musicbtn.addEventListener("click",function () {
+  homepage.classList.add("hide")
+  musicpg.classList.add("show")
+  devpage.classList.remove("show")
+  downloads.classList.remove("show")
 });

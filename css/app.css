@@ -119,6 +119,18 @@ background-color: black;
   font-size: xx-large;
   cursor: pointer; 
 }
+.download{
+  display: none;
+}
+.download.show{
+  display: inline;
+}
+.musicpg{
+  display: none;
+}
+.musicpg.show{
+  display: inline;
+}
 .mobbar{
   display: none;
 }
