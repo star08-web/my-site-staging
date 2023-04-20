@@ -65,7 +65,9 @@ background-color: black;
     scroll-behavior: smooth;
 }
 .home{
+  position: absolute;
     cursor: pointer;
+    top: 3%;
 }
 .homepage{
     transition: all 150ms;
@@ -97,16 +99,12 @@ background-color: black;
   z-index: 88;
 }
 .brand-logo{
-  position: absolute;
   border-radius: 100px;
-  top: 3%;
-    20%;
 }
 .downloads{
   position: absolute; 
   margin-top: 10px;
   top: 15%;
-    34%;
   font-size: xx-large;
   cursor: pointer;
 }
@@ -114,7 +112,6 @@ background-color: black;
   position: absolute;
   margin-top: 10px;
   top: 25%;
-    34%;
   font-size: xx-large;
   cursor: pointer; 
 }
@@ -122,7 +119,6 @@ background-color: black;
   position: absolute;
   top: 35%;
   margin-top: 10px;
-    34%;
   font-size: xx-large;
   cursor: pointer; 
 }
@@ -131,7 +127,6 @@ background-color: black;
   top: 89%;
   color: white;
   font-size: xx-large;
-    30%;
 }
 .download{
   display: none;
