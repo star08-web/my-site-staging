@@ -22,6 +22,7 @@ let bioclose = document.querySelector(".closebtn-bio");
 let musicpg = document.querySelector(".musicpg")
 let musicbtn = document.querySelector(".music")
 let downloadpg = document.querySelector(".download")
+let fm = document.querySelector(".toggler")
 toggler.addEventListener("click", function () {
   bar.classList.toggle("open");
   moblink.classList.toggle("show");

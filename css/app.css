@@ -82,24 +82,31 @@ background-color: black;
 }
 .navbar{
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: -2%;
-  top: 6%;
+  top: 4%;
   background-color: #1f1d1d;
-  border-radius: 100px;
+  border-radius: 15px;
   width: 5%;
-  height: 67%;
+  height: 77%;
+}
+.navbar.opened{
+  width: 80%;
+  z-index: 88;
 }
 .brand-logo{
-  position: relative;
+  position: absolute;
   border-radius: 100px;
   top: 3%;
-  left: 20%;
+    20%;
 }
 .downloads{
   position: absolute; 
   margin-top: 10px;
   top: 15%;
-  left: 34%;
+    34%;
   font-size: xx-large;
   cursor: pointer;
 }
@@ -107,7 +114,7 @@ background-color: black;
   position: absolute;
   margin-top: 10px;
   top: 25%;
-  left: 34%;
+    34%;
   font-size: xx-large;
   cursor: pointer; 
 }
@@ -115,9 +122,16 @@ background-color: black;
   position: absolute;
   top: 35%;
   margin-top: 10px;
-  left: 34%;
+    34%;
   font-size: xx-large;
   cursor: pointer; 
+}
+.toggler{
+  position: absolute;
+  top: 89%;
+  color: white;
+  font-size: xx-large;
+    30%;
 }
 .download{
   display: none;
