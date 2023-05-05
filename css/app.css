@@ -66,8 +66,12 @@ background-color: black;
 }
 .home{
   position: absolute;
-    cursor: pointer;
-    top: 3%;
+  cursor: pointer;
+  top: 3%;
+}
+.home.expanded{
+  transition: all 150ms;
+  left: 5%;
 }
 .homepage{
     transition: all 150ms;
@@ -93,9 +97,10 @@ background-color: black;
   border-radius: 15px;
   width: 5%;
   height: 77%;
+  transition: 150ms all;
 }
 .navbar.opened{
-  width: 80%;
+  width: 25%;
   z-index: 88;
 }
 .brand-logo{
@@ -108,12 +113,20 @@ background-color: black;
   font-size: xx-large;
   cursor: pointer;
 }
-.devices{
+.downloads.expanded{
+  transition: all 150ms;
+  left: 5.5%;
+}
+  .devices{
   position: absolute;
   margin-top: 10px;
   top: 25%;
   font-size: xx-large;
-  cursor: pointer; 
+  cursor: pointer;
+}
+.devices.expanded{
+  transition: all 150ms;
+  left: 5.5%;
 }
 .music{
   position: absolute;
@@ -122,11 +135,21 @@ background-color: black;
   font-size: xx-large;
   cursor: pointer; 
 }
+.music.expanded{
+  transition: all 150ms;
+  left: 5.5%;
+}
 .toggler{
   position: absolute;
   top: 89%;
   color: white;
   font-size: xx-large;
+  transition: all 500ms;
+}
+.toggler.expanded{
+  transition: all 150ms;
+  left: 5.5%;
+  transform: rotate(90deg);
 }
 .download{
   display: none;
@@ -142,4 +165,65 @@ background-color: black;
 }
 .mobbar{
   display: none;
+}
+.home-desc{
+  display: none;
+}
+.downloads-desc{
+  display: none;
+}
+.devices-desc{
+  display: none;
+}
+.music-desc{
+  display: none;
+}
+.settings-wrapper{
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  width: 100%;
+  height: 100%;
+  z-index: -23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings{
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  background-color: #1f1d1d;
+  border-radius: 15px;
+}
+.ui-internals-text{
+  font-family: 'roboto',sans-serif;
+  color: white;
+}
+.ui-internals-text.wm{
+  font-family: 'roboto',sans-serif;
+  color: #1f1d1d;
+}
+.settings-title{
+  position: absolute;
+  left: 3%;
+  top: 3%;
+}
+.ui-internals-btn{
+  border-radius: 100px;
+  background-color: #1f1d1d;
+  font-size: xx-large;
+  padding: 5px;
+  height: 15px;
+  border: white 1px solid;
+  color: white;
+}
+.ui-internals-btn.wm{
+  border-radius: 100px;
+  background-color: white;
+  font-size: xx-large;
+  border: #1f1d1d 1px solid;
+  color: #1f1d1d;
 }

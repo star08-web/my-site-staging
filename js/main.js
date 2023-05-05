@@ -23,6 +23,7 @@ let musicpg = document.querySelector(".musicpg")
 let musicbtn = document.querySelector(".music")
 let downloadpg = document.querySelector(".download")
 let fm = document.querySelector(".toggler")
+let navbar = document.querySelector(".navbar")
 toggler.addEventListener("click", function () {
   bar.classList.toggle("open");
   moblink.classList.toggle("show");
@@ -79,4 +80,12 @@ musicbtn.addEventListener("click",function () {
   musicpg.classList.add("show")
   devpage.classList.remove("show")
   downloads.classList.remove("show")
+});
+fm.addEventListener("click",function () {
+  navbar.classList.toggle("opened")
+  homedsk.classList.toggle("expanded")
+  downloadsdsk.classList.toggle("expanded")
+  devdsk.classList.toggle("expanded")
+  musicdsk.classList.toggle("expanded")
+  fm.classList.toggle("expanded")
 });

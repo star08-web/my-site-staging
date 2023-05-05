@@ -16,6 +16,10 @@
     font-family: rubik;
     src: url(./Rubik-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: roboto;
+    src: url(./Roboto-Regular.ttf);
+}
 /** font license is creative commons attribution share alike **/
 /** http://int10h.org/oldschool-pc-fonts **/
 @font-face {
