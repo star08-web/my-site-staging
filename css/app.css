@@ -1,6 +1,6 @@
 @import url('/fonts/fonts.css');
 *{
-    font-family: 'rubik', sans-serif;
+    font-family: 'roboto', sans-serif;
     color: white;
     text-decoration: none;
     font-weight: 200;
@@ -167,63 +167,42 @@ background-color: black;
   display: none;
 }
 .home-desc{
+  position: absolute;
+  top: 5%;
+  left: 23%;
+  font-size: larger;
   display: none;
 }
 .downloads-desc{
+  position: absolute;
+  top: 17%;
+  left: 23%;
+  font-size: larger;
   display: none;
 }
 .devices-desc{
+  position: absolute;
+  top: 27%;
+  left: 23%;
+  font-size: larger;
   display: none;
 }
 .music-desc{
+  position: absolute;
+  top: 37%;
+  left: 23%;
+  font-size: larger;
   display: none;
 }
-.settings-wrapper{
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  background-color: transparent;
-  backdrop-filter: blur(20px);
-  width: 100%;
-  height: 100%;
-  z-index: -23;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.home-desc.show{
+  display: inline
 }
-.settings{
-  position: absolute;
-  width: 70%;
-  height: 90%;
-  background-color: #1f1d1d;
-  border-radius: 15px;
+.downloads-desc.show{
+  display: inline;
 }
-.ui-internals-text{
-  font-family: 'roboto',sans-serif;
-  color: white;
+.devices-desc.show{
+  display: inline;
 }
-.ui-internals-text.wm{
-  font-family: 'roboto',sans-serif;
-  color: #1f1d1d;
-}
-.settings-title{
-  position: absolute;
-  left: 3%;
-  top: 3%;
-}
-.ui-internals-btn{
-  border-radius: 100px;
-  background-color: #1f1d1d;
-  font-size: xx-large;
-  padding: 5px;
-  height: 15px;
-  border: white 1px solid;
-  color: white;
-}
-.ui-internals-btn.wm{
-  border-radius: 100px;
-  background-color: white;
-  font-size: xx-large;
-  border: #1f1d1d 1px solid;
-  color: #1f1d1d;
+.music-desc.show{
+  display: inline;
 }

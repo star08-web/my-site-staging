@@ -1,0 +1,78 @@
+.osbake{
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    background-color: #1f1d1d;
+    width: 20%;
+    height: 46%;
+    border-radius: 15px;
+}
+.osbake-title{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.osbake-img{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
+.osbake-pricing{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 55%;
+    left: 5%;
+    background-color: #454FBF;
+    padding: 5px;
+    font-size: large;
+    border-radius: 7px;
+}
+.osbake-tag{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 45%;
+    left: 5%;
+    background-color: #454FBF;
+    padding: 5px;
+    border-radius: 7px;
+}
+.osbake-rating{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 65%;
+    left: 5%;
+    background-color: #454FBF;
+    padding: 5px;
+    border-radius: 7px;
+}
+.dl-btn-osbake{
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    background-color: #454FBF;
+    padding: 5px;
+    padding-left: 5px;
+    font-size: x-large;
+    border-radius: 7px;
+    transition: all 150ms;
+}
+.dl-btn-osbake:hover{
+    background-color: #4f58bd;
+}
+.osbake-os-support{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 75%;
+    left: 5%;
+    background-color: #454FBF;
+    padding: 5px;
+    border-radius: 7px;
+}
