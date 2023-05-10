@@ -30,7 +30,7 @@ let musicdesc = document.querySelector(".music-desc")
 let sitename = document.querySelector(".home-desc")
 var expandedstatus = "std"
 var env = "development"
-function deexpand(){
+function minimize(){
   if (expandedstatus !== "std"){
     navbar.classList.remove("opened")
     fm.classList.remove("expanded")
@@ -44,7 +44,7 @@ function deexpand(){
     musicdesc.classList.remove("show")
     expandedstatus = "std"
     if (env == "development"){
-      console.log("Log: De-Expanding Navbar")
+      console.log("Log: Minimizing Navbar")
     } else {
       // do nothing
     }
@@ -69,7 +69,7 @@ homedsk.addEventListener("click",function () {
   devpage.classList.remove("show");
   musicpg.classList.remove("show");
   downloadpg.classList.remove("show");
-  deexpand()
+  minimize()
 });
 
 downloadsdsk.addEventListener("click",function () {
@@ -77,7 +77,7 @@ downloadsdsk.addEventListener("click",function () {
   devpage.classList.remove("show");
   musicpg.classList.remove("show");
   downloadpg.classList.add("show");
-  deexpand()
+  minimize()
 });
 
 devdsk.addEventListener("click",function () {
@@ -85,7 +85,7 @@ devdsk.addEventListener("click",function () {
   devpage.classList.add("show");
   musicpg.classList.remove("show");
   downloadpg.classList.remove("show");
-  deexpand()
+  minimize()
 });
 
 ytbtn.addEventListener("click",function () {
@@ -115,7 +115,7 @@ musicbtn.addEventListener("click",function () {
   musicpg.classList.add("show")
   devpage.classList.remove("show")
   downloadpg.classList.remove("show")
-  deexpand()
+  minimize()
 });
 fm.addEventListener("click",function () {
   navbar.classList.toggle("opened")
