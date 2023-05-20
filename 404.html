@@ -9,7 +9,7 @@
     <style>
         *{
             color: white;
-            font-family: 'firacode' ,sans-serif;
+            font-family: 'nunitosans' ,sans-serif;
         }
         .kpanic{
             display: none;
@@ -26,14 +26,49 @@
             font-family: 'kernel' ,sans-serif;
             color: rgb(255, 38, 0);
         }
+        .bg{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -20;
+            background: linear-gradient(270deg, #004bad, #cb6be6);
+            background-size: 400% 400%;
+            -webkit-animation: movebg 42s ease infinite;
+            -moz-animation: movebg 42s ease infinite;
+            -o-animation: movebg 42s ease infinite;
+            animation: movebg 42s ease infinite;
+        }
+        @-webkit-keyframes movebg {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes movebg {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-o-keyframes movebg {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }         
+        @keyframes movebg {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
         .ea{
-            background-color: black;
+            background-color: transparent;
             cursor: pointer;
             position: absolute;
             top: 85%;
             left: 85%;
             width: 10%;
             height: 15%;
+            z-index: 5;
         }
         body{
             background-color: black;
@@ -41,10 +76,36 @@
             padding: 0px;
         }
         .err404{
-            font-size: xx-large;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            font-size: large;
+        }
+        .err404-btn-return{
+            position: relative;
+            padding: 15px;
+            border: white 5px solid;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: x-large;
+            transition: all 150ms;
+        }
+        .err404-btn-return:hover{
+            background-color: white;
+            color: black;
+        }
+        .err404-btn-return:not(:hover){
+            background-color: transparent;
+            color: white;
         }
         .err404.hide{
             display: none;
+        }
+        .text{
+            position: fixed;
+            top: 4%;
+            left: 30%;
+            height: 100%;
         }
     </style>
 </head>
@@ -178,10 +239,15 @@
        </div>
     </div>
     <div class="err404">
-        <h1>:(</h1>
-        <a>Resource Error: NotFound</a>
-        <br>
-        <a>Error 404</a>
+        <div class="bg"></div>
+        <div class="text">
+            <h1>Resource Error</h1>
+            <h2>The specified Resource wasn't found</h2>
+            <h3>HTTP Error 404</h3>
+            <br>
+            <br>
+            <a class="err404-btn-return" href="/">Back to Main Website</a>
+        </div>
     </div>
     <div class="ea"></div>
     <script>

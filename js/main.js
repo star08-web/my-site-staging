@@ -28,6 +28,8 @@ let dldesc = document.querySelector(".downloads-desc")
 let devdesc = document.querySelector(".devices-desc")
 let musicdesc = document.querySelector(".music-desc")
 let sitename = document.querySelector(".home-desc")
+let copymsgbox = document.querySelector(".cpalertmsgbox")
+let copymsgboxhide = document.querySelector(".cpalert-hide")
 var expandedstatus = "std"
 var env = "development"
 function minimize(){
@@ -64,30 +66,6 @@ toggler.addEventListener("click", function () {
   music.classList.toggle("show");
 });
 
-homedsk.addEventListener("click",function () {
-  homepage.classList.remove("hide");
-  devpage.classList.remove("show");
-  musicpg.classList.remove("show");
-  downloadpg.classList.remove("show");
-  minimize()
-});
-
-downloadsdsk.addEventListener("click",function () {
-  homepage.classList.add("hide");
-  devpage.classList.remove("show");
-  musicpg.classList.remove("show");
-  downloadpg.classList.add("show");
-  minimize()
-});
-
-devdsk.addEventListener("click",function () {
-  homepage.classList.add("hide");
-  devpage.classList.add("show");
-  musicpg.classList.remove("show");
-  downloadpg.classList.remove("show");
-  minimize()
-});
-
 ytbtn.addEventListener("click",function () {
   ytchn.classList.add("popopen");
 });
@@ -110,12 +88,8 @@ biobtn.addEventListener("click",function () {
 bioclose.addEventListener("click",function () {
   bio.classList.remove("popopen");
 });
-musicbtn.addEventListener("click",function () {
-  homepage.classList.add("hide")
-  musicpg.classList.add("show")
-  devpage.classList.remove("show")
-  downloadpg.classList.remove("show")
-  minimize()
+copymsgboxhide.addEventListener("click",function () {
+  copymsgbox.classList.remove("show")
 });
 fm.addEventListener("click",function () {
   navbar.classList.toggle("opened")
@@ -139,3 +113,81 @@ fm.addEventListener("click",function () {
     // do nothing
   }
 });
+homedsk.addEventListener("click",function () {
+  homepage.classList.remove("hide");
+  devpage.classList.remove("show");
+  musicpg.classList.remove("show");
+  downloadpg.classList.remove("show");
+  minimize()
+});
+
+downloadsdsk.addEventListener("click",function () {
+  homepage.classList.add("hide");
+  devpage.classList.remove("show");
+  musicpg.classList.remove("show");
+  downloadpg.classList.add("show");
+  minimize()
+});
+
+devdsk.addEventListener("click",function () {
+  homepage.classList.add("hide");
+  devpage.classList.add("show");
+  musicpg.classList.remove("show");
+  downloadpg.classList.remove("show");
+  minimize()
+});
+musicbtn.addEventListener("click",function () {
+  homepage.classList.add("hide")
+  musicpg.classList.add("show")
+  devpage.classList.remove("show")
+  downloadpg.classList.remove("show")
+  minimize()
+});
+  var hashtag = window.location.hash; // Get the current hashtag
+  switch (hashtag) {
+  case '#home':
+    homepage.classList.remove("hide");
+    devpage.classList.remove("show");
+    musicpg.classList.remove("show");
+    downloadpg.classList.remove("show");
+    minimize()
+    break;
+  case '#downloads':
+    homepage.classList.add("hide");
+    devpage.classList.remove("show");
+    musicpg.classList.remove("show");
+    downloadpg.classList.add("show");
+    minimize()
+    break;
+  case '#devices':
+      homepage.classList.add("hide");
+      devpage.classList.add("show");
+      musicpg.classList.remove("show");
+      downloadpg.classList.remove("show");
+      minimize()
+      break;
+  case '#music':
+    homepage.classList.add("hide")
+    musicpg.classList.add("show")
+    devpage.classList.remove("show")
+    downloadpg.classList.remove("show")
+    minimize()
+    break;
+  case '#YTS':
+    window.location.replace("https://www.youtube.com/@star08-web?sub_confirmation=1");
+    break;
+}
+function copyToClipboard(link) {
+  var tempInput = document.createElement("input");
+  tempInput.value = link;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  tempInput.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+  copymsgbox.classList.add("show");
+  function hidecopymsgbox(){
+    copymsgbox.classList.remove("show");
+  }
+  setTimeout(hidecopymsgbox, 5000);
+}

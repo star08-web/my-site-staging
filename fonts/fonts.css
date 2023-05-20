@@ -1,5 +1,4 @@
 /** fonts licensed under OFL **/
-
 @font-face {
     font-family: Quicksand;
     src: url(./Quicksand.ttf);
@@ -19,6 +18,10 @@
 @font-face {
     font-family: roboto;
     src: url(./Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: nunitosans;
+    src: url(./NunitoSans-VariableFont.ttf);
 }
 /** font license is creative commons attribution share alike **/
 /** http://int10h.org/oldschool-pc-fonts **/

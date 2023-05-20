@@ -16,14 +16,14 @@
 .summer{
     height: 550px;
     width: 350px;
-    border-radius: 15px;
+    border-radius: 7px;
 }
 .download-btn{
     color: whitesmoke;
     font-size: large;
     position: absolute;
     background-color: rgba(95, 88, 88, 0.644);
-    border-radius: 10px;
+    border-radius: 3px;
     padding: 10px;
     cursor: pointer;
     top: 91.5%;
@@ -38,7 +38,7 @@
     font-size: large;
     position: absolute;
     background-color: rgba(95, 88, 88, 0.644);
-    border-radius: 10px;
+    border-radius: 3px;
     cursor: pointer;
     padding: 10px;
     top: 91.5%;
@@ -66,10 +66,50 @@
 .lofidream{
     height: 550px;
     width: 350px;
-    border-radius: 15px;
+    border-radius: 7px;
 }
 .mobbar{
     display: none;
+}
+.cpalertmsgbox{
+    position: fixed;
+    height: 100px;
+    width: 400px;
+    background-color: #2b2929;
+    border-radius: 3px;
+    border: azure 3px solid;
+    top: 80%;
+    left: 38%;
+    display: none;
+}
+.cpalert-icn{
+    position: absolute;
+    font-size: xx-large;
+    top: 30%;
+    left: 5%;
+    color: rgb(2, 196, 2);
+}
+.cpalert-text{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.cpalert-hide{
+    position: absolute;
+    background-color: azure;
+    font-size: larger;
+    border-radius: 3px;
+    color: #2b2929;
+    top: 65%;
+    left: 80%;
+    width: 15%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+.cpalertmsgbox.show{
+    display: inline;
 }
 @media only screen and (max-width:600px){
     ::-webkit-scrollbar {
