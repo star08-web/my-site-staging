@@ -1,13 +1,5 @@
 /** fonts licensed under OFL **/
 @font-face {
-    font-family: Quicksand;
-    src: url(./Quicksand.ttf);
-}
-@font-face {
-    font-family: Inter;
-    src: url(./Inter.ttf);
-}
-@font-face {
     font-family: firacode;
     src: url(./FiraCode-VariableFont_wght.ttf);
 }
