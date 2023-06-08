@@ -173,9 +173,13 @@ musicbtn.addEventListener("click",function () {
     downloadpg.classList.remove("show")
     minimize()
     break;
-  case '#YTS':
-    window.location.replace("https://www.youtube.com/@star08-web?sub_confirmation=1");
-    break;
+    default:
+      homepage.classList.remove("hide");
+      devpage.classList.remove("show");
+      musicpg.classList.remove("show");
+      downloadpg.classList.remove("show");
+      minimize()
+      break;
 }
 function copyToClipboard(link) {
   var tempInput = document.createElement("input");
