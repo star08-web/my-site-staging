@@ -4,7 +4,7 @@
     position: absolute;
     height: 600px;
     width: 350px;
-    background-color: rgb(32, 32, 32);
+    background-color: #1f1d1d;
     border: 1px solid rgb(73, 73, 73);
     border-radius: 10px;
     left: 15%;
@@ -54,7 +54,7 @@
     position: absolute;
     height: 600px;
     width: 350px;
-    background-color: rgb(32, 32, 32);
+    background-color: #1f1d1d   ;
     border: 1px solid rgb(73, 73, 73);
     border-radius: 10px;
     left: 60%;
