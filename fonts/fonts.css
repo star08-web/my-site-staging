@@ -1,18 +1,18 @@
 /** fonts licensed under OFL **/
 @font-face {
-    font-family: firacode;
+    font-family: 'Fira code';
     src: url(./FiraCode-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: rubik;
+    font-family: 'Rubik';
     src: url(./Rubik-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: arimo;
+    font-family: 'Arimo';
     src: url(./Arimo-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: nunitosans;
+    font-family: 'Nunito Sans';
     src: url(./NunitoSans-VariableFont.ttf);
 }
 /** font license is creative commons attribution share alike **/

@@ -1,6 +1,6 @@
 @import url('/fonts/fonts.css');
 *{
-    font-family: 'roboto', sans-serif;
+    font-family: 'Nunito Sans', ui-sans-serif, sans-serif;
     color: white;
     text-decoration: none;
 }

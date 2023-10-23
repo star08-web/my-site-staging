@@ -30,6 +30,9 @@ let musicdesc = document.querySelector(".music-desc")
 let sitename = document.querySelector(".home-desc")
 let copymsgbox = document.querySelector(".cpalertmsgbox")
 let copymsgboxhide = document.querySelector(".cpalert-hide")
+let ytif = document.getElementById("yt-iframe")
+let summerif = document.getElementById("summer-iframe")
+let lfdif = document.getElementById("lfd-iframe")
 var expandedstatus = "std"
 var env = "development"
 function minimize(){
@@ -56,6 +59,13 @@ function minimize(){
     } else {
       // do nothing
     }
+  }
+}
+function controlyt(action){
+  if (action === "Stop"){
+    ytif.src = "about:blank"
+  } else {
+    ytif.src = "https://www.youtube-nocookie.com/embed/videoseries?list=PLEC99ANh92hGqPra9LpK2GJXY0dsFtm2B"
   }
 }
 toggler.addEventListener("click", function () {
@@ -118,6 +128,8 @@ homedsk.addEventListener("click",function () {
   devpage.classList.remove("show");
   musicpg.classList.remove("show");
   downloadpg.classList.remove("show");
+  summerif.src = "about:blank"
+  lfdif.src = "about:blank"
   minimize()
 });
 
@@ -126,6 +138,8 @@ downloadsdsk.addEventListener("click",function () {
   devpage.classList.remove("show");
   musicpg.classList.remove("show");
   downloadpg.classList.add("show");
+  summerif.src = "about:blank"
+  lfdif.src = "about:blank"
   minimize()
 });
 
@@ -134,6 +148,8 @@ devdsk.addEventListener("click",function () {
   devpage.classList.add("show");
   musicpg.classList.remove("show");
   downloadpg.classList.remove("show");
+  summerif.src = "about:blank"
+  lfdif.src = "about:blank"
   minimize()
 });
 musicbtn.addEventListener("click",function () {
@@ -141,6 +157,8 @@ musicbtn.addEventListener("click",function () {
   musicpg.classList.add("show")
   devpage.classList.remove("show")
   downloadpg.classList.remove("show")
+  summerif.src = "https://lnkfi.re/alxsummer/widget"
+  lfdif.src = "https://lnkfi.re/alxlofidream/widget"
   minimize()
 });
   var hashtag = window.location.hash; // Get the current hashtag

@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="css/devices.css">
     <link rel="stylesheet" href="css/music.css">
     <link rel="stylesheet" href="css/downloads.css">
-    <link id="fontsrc" rel="stylesheet" href="fonts/fonts-local.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.14/dist/cookieconsent.css">
     <meta charset="UTF-8">
     <meta name="description" content="I am only a developer (kinda)">
     <meta name="keywords" content="developer, web development, coding">
@@ -56,13 +53,13 @@
             <a class="intro">Hi, Im Star, A Youtuber/Student From Italy</a>
             <a class="something">i make videos about windows and sometimes i create my own programs and music</a>
             <a class="contact-btn" title="contact me"><img class="btn-img-quick" src="./img/e-mail.svg"></a>
-            <a class="youtube-btn" title="visit my youtube channel"><img class="btn-img-quick" src="./img/youtube.svg"></a>
+            <a class="youtube-btn" onclick="controlyt('1')" title="visit my youtube channel"><img class="btn-img-quick" src="./img/youtube.svg"></a>
             <a class="bio-btn" title="follow me everywhere"><img class="btn-img-quick" src="./img/kissing-cat.svg"></a>
             <div class="yt-channel-page-embed">
                 <div class="ytem">
-                    <div style="width: 100%; height: 100%; border-radius: 15px;" class="yt-channel-embed" data-service="youtubeplayembed" data-id="PLEC99ANh92hGqPra9LpK2GJXY0dsFtm2B"></div>
+                    <iframe id="yt-iframe" style="position: absolute; width: 100%; height: 100%; border-radius: 15px;" class="yt-channel-embed" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLEC99ANh92hGqPra9LpK2GJXY0dsFtm2B" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <a class="closebtn-yt">Close</a>
+                <a onclick="controlyt('Stop')" class="closebtn-yt">Close</a>
             </div>
         </div>
         <div class="contact-form">
@@ -79,7 +76,7 @@
                     <img class="pc-laptop" src="./img/pc-laptop.png">
                     <a class="realname" href="#cherry">HP Envy x360 Convertible 13-ay0xxx</a>
                     <a class="codename">CodeName: Cherry</a>
-                    <a class="OS">Os: Windows 11 22h2 (home)</a>
+                    <a class="OS">Os: Windows 10 22h2 (home)</a>
                     <a class="specs">System Specs: <a class="specs-link link" target="_blank" rel="noopener noreferrer" href="https://support.hp.com/it-it/document/c06638985">See Here</a></a>
                 </figure>
                 <!-- space -->
@@ -110,12 +107,12 @@
         </div>
         <div class="musicpg">
                 <figure class="summerframe">
-                    <iframe class="summer frame" src="https://lnkfi.re/alxsummer/widget" frameborder="0"></iframe>
+                    <iframe id="summer-iframe" class="summer frame" src="https://lnkfi.re/alxsummer/widget" frameborder="0"></iframe>
                     <a class="download-btn" href="https://alexifiles.has.rocks/summer.mp3" target="_blank" rel="noopener noreferrer">Download <i class="bi bi-arrow-down"></i></a>
                     <a class="stream-btn" onclick="copyToClipboard('https://ffm.to/alexifysummer')">Get Link <i class="bi bi-play-fill"></i></a>
             </figure>
             <figure class="lofiframe">
-                    <iframe class="lofidream frame" src="https://lnkfi.re/alxlofidream/widget" frameborder="0"></iframe>
+                    <iframe id="lfd-iframe" class="lofidream frame" src="https://lnkfi.re/alxlofidream/widget" frameborder="0"></iframe>
                     <a class="download-btn" href="https://alexifiles.has.rocks/lofi_dream.mp3" target="_blank" rel="noopener noreferrer">Download <i class="bi bi-arrow-down"></i></a>
                     <a class="stream-btn" onclick="copyToClipboard('https://lnkfi.re/alxlofidream')">Get Link <i class="bi bi-play-fill"></i></a>
             </figure>
@@ -166,9 +163,6 @@
         </div>
     </div>
     <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.14/dist/cookieconsent.umd.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.js" defer></script>
-    <script src="./js/iframeconfig.js" defer></script>
 </body>
 <!--Used materials from twemoji (https://twemoji.twitter.com/)-->
 </html>

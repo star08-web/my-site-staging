@@ -74,7 +74,7 @@
     position: absolute;
     background-color: rgb(163, 159, 159);
     color: black;
-    font-family: 'firacode';
+    font-family: ui-sans-serif, sans-serif;
     font-size: larger;
     border-radius: 5px;
     padding: 5px;
@@ -126,7 +126,7 @@
     position: absolute;
     background-color: rgb(163, 159, 159);
     color: black;
-    font-family: 'firacode';
+    font-family: ui-sans-serif, sans-serif;
     font-size: larger;
     border-radius: 5px;
     padding: 5px;
@@ -170,7 +170,7 @@
     position: absolute;
     background-color: rgb(163, 159, 159);
     color: black;
-    font-family: 'firacode';
+    font-family: ui-sans-serif, sans-serif;
     font-size: larger;
     border-radius: 5px;
     padding: 5px;

@@ -1,12 +1,9 @@
 @import url('/fonts/fonts.css');
 *{
-    font-family: 'arimo','rubik','nunitosans','Segoe UI',Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Arimo','Rubik','Nunito Sans', ui-sans-serif, sans-serif;
     color: white; 
     text-decoration: none;
     font-weight: 200;
-}
-::selection{
-  background-color: transparent
 }
 body{
 background-color: black;
@@ -78,16 +75,17 @@ background-color: black;
 }
 .homepage{
     transition: all 150ms;
+    display: inline;
 }
 .homepage.hide{
-    scale: 0;
+    display: none;
 }
 .devicespage{
+    display: none;
     transition: all 150ms;
-    scale: 0;
 }
 .devicespage.show{
-    scale: 1;
+    display: inline;
 }
 .navbar{
   position: fixed;
